@@ -47,7 +47,8 @@ navigation = [
 # the image file(s) need to be placed in content/logos
 logos = [
 #   { alt_text = "CodeRefinery logo", target_url = "https://coderefinery.org/", image = "coderefinery.png" },
-    { alt_text = "CodeRefinery logo", target_url = "https://coderefinery.org/", image = "coderefinery.png" }
+#   { alt_text = "CodeRefinery logo", target_url = "https://coderefinery.org/", image = "coderefinery.png" }
+    { alt_text = "INES logo", target_url = "https://ines.org/", image = "ines.png" }
 ]
 
 # adapt this
