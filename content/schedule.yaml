@@ -4,63 +4,87 @@ schedule:
   - title: "Installation help and on-boarding(?)"
     date: "2023-11-17"
     sessions:
-      - starts: ??:??
-        ends: ??:??
+      - starts: 12:00
+        ends: 14:00
         title: Installation help for everybody
   - title: "Day 1"
     date: "2023-11-20"
     sessions:
       - starts: 8:00
-        ends: 8:20
-        title: Welcome and introduction
-        url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-        presenters: TBA
-      - starts: 8:20
-        ends: 9:00
-        title: Introduction to version control - part 1/4
-        url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Introduction to version control - part 2/4
-        url: https://coderefinery.github.io/git-intro/
+        ends: 12:00
         presenters: TBA
   - title: "Day 2"
     date: "2023-11-21"
     sessions:
       - starts: 8:00
-        ends: 9:00
-        title: Introduction to version control - part 3/4
-        url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Introduction to version control - part 4/4
-        url: https://coderefinery.github.io/git-intro/
+        ends: 12:00
         presenters: TBA
   - title: "Day 3"
     date: "2023-11-27"
     sessions:
       - starts: 8:00
-        ends: 9:00
-        title: Collaborative distributed version control - part 1/2
-        url: https://coderefinery.github.io/git-collaborative/
-        presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Collaborative distributed version control - part 2/2
-        url: https://coderefinery.github.io/git-collaborative/
+        ends: 12:00
         presenters: TBA
   - title: "Day 4"
     date: "2023-11-28"
     sessions:
       - starts: 8:00
-        ends: 9:00
-        title: Reproducible research and FAIR data
-        url: https://coderefinery.github.io/reproducible-research/
+        ends: 12:00
         presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Social coding and open software
-        url: https://coderefinery.github.io/social-coding/
-        presenters: TBA
+  # - title: "Day 1"
+  #   date: "2023-11-20"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 8:20
+  #       title: Welcome and introduction
+  #       url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
+  #       presenters: TBA
+  #     - starts: 8:20
+  #       ends: 9:00
+  #       title: Introduction to version control - part 1/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Introduction to version control - part 2/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  # - title: "Day 2"
+  #   date: "2023-11-21"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Introduction to version control - part 3/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Introduction to version control - part 4/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  # - title: "Day 3"
+  #   date: "2023-11-27"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Collaborative distributed version control - part 1/2
+  #       url: https://coderefinery.github.io/git-collaborative/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Collaborative distributed version control - part 2/2
+  #       url: https://coderefinery.github.io/git-collaborative/
+  #       presenters: TBA
+  # - title: "Day 4"
+  #   date: "2023-11-28"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Reproducible research and FAIR data
+  #       url: https://coderefinery.github.io/reproducible-research/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Social coding and open software
+  #       url: https://coderefinery.github.io/social-coding/
+  #       presenters: TBA
