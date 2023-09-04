@@ -2,11 +2,11 @@
 
 # this variable has to be set but it is not used
 # inside the templates (end in '/')
-base_url = "https://coderefinery.github.io/template-workshop-webpage/"
+base_url = "https://noresmhub.github.io/NorESM_Workshop_2023/"
 
 # When adapting the title, do not forget to also adjust base_url above
-title = "Replace this title in config.toml"
-description = "Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists."
+title = "NorESM user workshop 2023"
+description = "An introductory course on how to run, diagnose and contribute to NorESM."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -29,7 +29,7 @@ navigation = [
     { name = "About", target = "" },
     { name = "List of exercises", target = "exercises/" },
     { name = "Audience", target = "audience/" },
-    { name = "Certificates", target = "certificates/" },
+    #{ name = "Certificates", target = "certificates/" },
     { name = "How to join", target = "join/" },
     { name = "Requirements", target = "requirements/" },
     { name = "Q&A", target = "questions/" },
@@ -37,10 +37,10 @@ navigation = [
     { name = "Communication", target = "communication/" }
 ]
 
-twitter_image = "https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png"
+# twitter_image = "https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png"
 
 # plausible.io analytics
-plausible = { src = "https://plausible.cs.aalto.fi/js/script.js", domain = "coderefinery.github.io", github_ref = "refs/heads/main" }
+#plausible = { src = "https://plausible.cs.aalto.fi/js/script.js", domain = "coderefinery.github.io", github_ref = "refs/heads/main" }
 
 
 # you can place multiple logos like this
