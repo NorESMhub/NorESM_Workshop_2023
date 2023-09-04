@@ -28,13 +28,14 @@ We collect here the exercise groups that we know:
 
 ## Instructors
 
-- Radovan Bast
-- ...
-
+- Ada Gjermundsen
+- Alok Gupta
+- Yanchun He
+- Tomas Torsvik
 
 ## Workshop organizers
 
-- Radovan Bast
+- INES2 Interim
 - ...
 
 
