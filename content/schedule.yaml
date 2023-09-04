@@ -1,39 +1,21 @@
 ---
 # all times must be input in UTC, be careful about daylight saving
 schedule:
-  - title: "Installation help and on-boarding"
-    date: "2023-09-12"
+  - title: "Installation help and on-boarding(?)"
+    date: "2023-11-17"
     sessions:
-      - starts: 9:30
-        ends: 10:30
-        title: On-boarding for team leaders leading groups over video
-      - starts: 11:00
-        ends: 12:00
-        title: On-boarding for team leaders leading in-person teams
-      - starts: 12:30
-        ends: 14:00
-        title: Installation help for everybody
-  - title: "Installation help and on-boarding (you don't need to attend both days, choose the day that is better for you)"
-    date: "2023-09-13"
-    sessions:
-      - starts: 9:30
-        ends: 10:30
-        title: On-boarding for team leaders leading groups over video
-      - starts: 11:00
-        ends: 12:00
-        title: On-boarding for team leaders leading in-person teams
-      - starts: 12:30
-        ends: 14:00
+      - starts: ??:??
+        ends: ??:??
         title: Installation help for everybody
   - title: "Day 1"
-    date: "2023-09-19"
+    date: "2023-11-20"
     sessions:
-      - starts: 7:00
-        ends: 7:20
+      - starts: 8:00
+        ends: 8:20
         title: Welcome and introduction
         url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
         presenters: TBA
-      - starts: 7:20
+      - starts: 8:20
         ends: 9:00
         title: Introduction to version control - part 1/4
         url: https://coderefinery.github.io/git-intro/
@@ -44,9 +26,9 @@ schedule:
         url: https://coderefinery.github.io/git-intro/
         presenters: TBA
   - title: "Day 2"
-    date: "2023-09-20"
+    date: "2023-11-21"
     sessions:
-      - starts: 7:00
+      - starts: 8:00
         ends: 9:00
         title: Introduction to version control - part 3/4
         url: https://coderefinery.github.io/git-intro/
@@ -57,9 +39,9 @@ schedule:
         url: https://coderefinery.github.io/git-intro/
         presenters: TBA
   - title: "Day 3"
-    date: "2023-09-21"
+    date: "2023-11-27"
     sessions:
-      - starts: 7:00
+      - starts: 8:00
         ends: 9:00
         title: Collaborative distributed version control - part 1/2
         url: https://coderefinery.github.io/git-collaborative/
@@ -70,9 +52,9 @@ schedule:
         url: https://coderefinery.github.io/git-collaborative/
         presenters: TBA
   - title: "Day 4"
-    date: "2023-09-26"
+    date: "2023-11-28"
     sessions:
-      - starts: 7:00
+      - starts: 8:00
         ends: 9:00
         title: Reproducible research and FAIR data
         url: https://coderefinery.github.io/reproducible-research/
@@ -81,35 +63,4 @@ schedule:
         ends: 11:30
         title: Social coding and open software
         url: https://coderefinery.github.io/social-coding/
-        presenters: TBA
-  - title: "Day 5"
-    date: "2023-09-27"
-    sessions:
-      - starts: 7:00
-        ends: 9:00
-        title: Documentation
-        url: https://coderefinery.github.io/documentation/
-        presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Jupyter
-        url: https://coderefinery.github.io/jupyter/
-        presenters: TBA
-  - title: "Day 6"
-    date: "2023-09-28"
-    sessions:
-      - starts: 7:00
-        ends: 9:00
-        title: Software testing
-        url: https://coderefinery.github.io/testing/
-        presenters: TBA
-      - starts: 10:00
-        ends: 11:30
-        title: Modular code development
-        url: https://coderefinery.github.io/modular-type-along/
-        presenters: TBA
-      - starts: 11:30
-        ends: 12:00
-        title: Concluding remarks and where to go from here
-        url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
         presenters: TBA
