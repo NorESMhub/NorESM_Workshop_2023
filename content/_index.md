@@ -38,9 +38,5 @@ The workshop is intended for Ph.D students, postdocs and scientists who are inte
 ## Workshop organizers
 
 - INES2 Interim
-- ...
+- CHESS - Research school on changing climates in the coupled earth system
 
-
-## Expert helpers
-
-- ...
