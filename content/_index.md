@@ -13,6 +13,8 @@ learn how to contribute to the NorESM model system and supporting infrastructure
 
 The workshop is intended for Ph.D students, postdocs and scientists who are interested in executing model simulations and learning more about technical aspects around it.
 
+The workshop is sponsored by CHESS. If you join the workshop as a CHESS student, please indicate this in the registration form.
+
 
 ## Prerequisites
 
