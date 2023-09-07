@@ -1,6 +1,6 @@
 The INES interim consortium and CHESS are inviting participants to join the NorESM user workshop 2023. The event will be organized as a series of half-day events during the days November 20th, 21st, 27th and 28th, as a hybrid workshop with regional hubs in Oslo, Bergen and Tromsø.
 
-The workshop is intended for Ph.D students, postdocs and scientists who are want to lear how to execute model simulations with the NorESM model, analyze NorESM model output, and learn about the technical aspects that enables efficient use of the model system.
+The workshop is intended for Ph.D students, postdocs and scientists who are want to learn how to execute model simulations with the NorESM model, analyze NorESM model output, and learn about the technical aspects that enables efficient use of the model system.
 
 The goal of the user workshop is that the participants should be able to set up and run NorESM experiments, run standard diagnostics on the model output, and learn how to contribute to the NorESM model system and supporting infrastructure.
 
