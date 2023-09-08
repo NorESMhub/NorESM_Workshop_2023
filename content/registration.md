@@ -1,7 +1,9 @@
 +++
 +++
 
-**Deadline for registration:** Friday 3 November 2023
+**Deadline for registration:** Friday 27 October 2023
+
+
 
 ## Content of workshop:
 
