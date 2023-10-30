@@ -57,7 +57,7 @@ registration_link = "https://skjemaker.app.uib.no/view.php?id=15292547"
 source_repo = "https://github.com/coderefinery/template-workshop-webpage"
 
 # uncomment as soon as registration opens
-registration_is_open = true
+# registration_is_open = true
 
 # uncomment as soon as registration closes
-# registration_is_closed = true
+registration_is_closed = true
