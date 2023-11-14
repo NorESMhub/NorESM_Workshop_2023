@@ -35,7 +35,9 @@
       </tr>
       <tr>
         <td>
-          <b>Goal for the day:</b>
+          {% if day.goal %}
+            <b>Goal for the day:</b>
+          {% endif %}
         </td>
         <td>
           {% if day.goal %}
