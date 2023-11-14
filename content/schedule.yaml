@@ -3,6 +3,7 @@
 schedule:
   - title: "Installation help and on-boarding(?)"
     date: "2023-11-17"
+    locations:
     sessions:
       - starts: 12:00
         ends: 14:00
@@ -55,6 +56,7 @@ schedule:
         title: Exercise-2 -- Examine model output with ncview
   - title: "Day 2: NorESM model structure. Model components; data components; coupler; build procedure"
     date: "2023-11-21"
+    locations:
     sessions:
       - starts: 9:00
         ends: 9:30
@@ -93,6 +95,7 @@ schedule:
         title: Exercise-4 -- Run pi-control and historical
   - title: "Day 3: NorESM model diagnostics."
     date: "2023-11-27"
+    locations:
     sessions:
       - starts: 9:00
         ends: 11:00
@@ -104,6 +107,7 @@ schedule:
         presenters: TBA
   - title: "Day 4: NorESM model development."
     date: "2023-11-28"
+    locations:
     sessions:
       - starts: 9:00
         ends: 11:00
