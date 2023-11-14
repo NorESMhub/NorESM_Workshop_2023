@@ -33,13 +33,13 @@
           <b>{{ day.title }}</b>
         </td>
       </tr>
-      <tr>
-        <td rowspan="2">
-          {% if day.goal %}
+      {% if day.goal %}
+        <tr>
+          <td rowspan="2">
             <b>Goal for the day:</b> {{ day.goal }}
-          {% endif %}
-        </td>
-      </tr>
+          </td>
+        </tr>
+      {% endif %}
       {% if day.locations %}
         {% for loc in day.locations %}
           <tr>
