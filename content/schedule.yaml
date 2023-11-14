@@ -7,7 +7,7 @@ schedule:
       - starts: 12:00
         ends: 14:00
         title: Installation help for everybody
-  - title: "Day 1"
+  - title: "Day 1: Basic proceures. Download NorESM; set up experiment; run model; view output"
     date: "2023-11-20"
     sessions:
       - starts: 9:00
@@ -46,7 +46,7 @@ schedule:
       - starts: 13:40
         ends: 14:00
         title: Exercise-2 -- Examine model output with ncview
-  - title: "Day 2"
+  - title: "Day 2: NorESM model structure. Model components; data components; coupler; build procedure"
     date: "2023-11-21"
     sessions:
       - starts: 9:00
@@ -57,15 +57,34 @@ schedule:
         ends: 10:00
         title: The NorESM model structure
 #        presenters: TBA
-      - starts: 9:00
+      - starts: 10:00
+        ends: 10:15
+        title: break
+      - starts: 10:15
+        ends: 10:45
+        title: Setting up a new NorESM case
+#        presenters: TBA
+      - starts: 10:45
         ends: 11:00
-        title: Introduction to NorESM - part 2/4
-        presenters: TBA
+        title: Exercise-3 -- "checkout_externals" and "query_config" scripts
+      - starts: 11:00
+        ends: 12:00
+        title: lunch break
       - starts: 12:00
+        ends: 12:45
+        title: Configure build and run settings for a case
+#        presenters: TBA
+      - starts: 12:45
+        ends: 13:00
+        title: NorESM log files
+#        presenters: TBA
+      - starts: 13:00
+        ends: 13:15
+        title: break
+      - starts: 13:15
         ends: 14:00
-        title: Introduction to NorESM - part 2/4 (cont.)
-        presenters: TBA
-  - title: "Day 3"
+        title: Exercise-4 -- Run pi-control and historical
+  - title: "Day 3: NorESM model diagnostics."
     date: "2023-11-27"
     sessions:
       - starts: 9:00
@@ -76,7 +95,7 @@ schedule:
         ends: 14:00
         title: Introduction to NorESM - part 3/4 (cont.)
         presenters: TBA
-  - title: "Day 4"
+  - title: "Day 4: NorESM model development."
     date: "2023-11-28"
     sessions:
       - starts: 9:00
