@@ -35,7 +35,7 @@
       </tr>
       {% if day.goal %}
         <tr>
-          <td rowspan="2">
+          <td colspan="2">
             <b>Goal for the day:</b> {{ day.goal }}
           </td>
         </tr>
@@ -43,7 +43,7 @@
       {% if day.locations %}
         {% for loc in day.locations %}
           <tr>
-            <td rowspan="2">
+            <td colspan="2">
               {% if loc.url %}
                 <b>{{ loc.location }}:</b> <a href="{{ loc.url }}" target="_blank">{{ loc.room }}</a>
               {% else %}
