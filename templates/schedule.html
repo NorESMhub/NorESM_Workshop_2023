@@ -33,28 +33,20 @@
           <b>{{ day.title }}</b>
         </td>
       </tr>
-        <td>
+        <td rowspan="2">
           {% if day.goal %}
-            <b>Goal for the day:</b>
-          {% endif %}
-        </td>
-        <td>
-          {% if day.goal %}
-            {{ day.goal }}
+            <b>Goal for the day:</b> {{ day.goal }}
           {% endif %}
         </td>
       </tr>
       {% if day.locations %}
         {% for loc in day.locations %}
           <tr>
-            <td>
-              <b>{{ loc.location }}:</b>
-            </td>
-            <td>
+            <td rowspan="2">
               {% if loc.url %}
-                <a href="{{ loc.url }}" target="_blank">{{ loc.room }}</a>
+                <b>{{ loc.location }}:</b> <a href="{{ loc.url }}" target="_blank">{{ loc.room }}</a>
               {% else %}
-                {{ loc.room }}
+                <b>{{ loc.location }}:</b> {{ loc.room }}
               {% endif %}
             </td>
           </tr>
