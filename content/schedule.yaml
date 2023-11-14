@@ -61,8 +61,9 @@ schedule:
       - starts: 13:40
         ends: 14:00
         title: Exercise-2 -- Examine model output with ncview
-  - title: "Day 2: NorESM model structure. Model components; data components; coupler; build procedure"
+  - title: "Day 2: NorESM model structure."
     date: "2023-11-21"
+    goal: "Model components; data components; coupler; build procedure"
     locations:
       - location: "Bergen"
         room: "UiB, Geofysisk Institutt, U105"
