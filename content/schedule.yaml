@@ -36,7 +36,7 @@ schedule:
         presenters: TBA
       - starts: 12:00
         ends: 13:00
-        title: Exercise-1: Setup, build and run NorESM
+        title: Exercise-1 -- Setup, build and run NorESM
         presenters: TBA
       - starts: 13:00
         ends: 13:15
@@ -48,7 +48,7 @@ schedule:
         presenters: TBA
       - starts: 13:40
         ends: 14:00
-        title: Exercise-2: Exercise-2: Examine model output with ncview
+        title: Exercise-2 -- Examine model output with ncview
         presenters: TBA
   - title: "Day 2"
     date: "2023-11-21"
