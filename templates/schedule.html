@@ -33,6 +33,16 @@
           <b>{{ day.title }}</b>
         </td>
       </tr>
+      <tr>
+        <td>
+          <b>Goal for the day:</b>
+        </td>
+        <td>
+          { if day.goal %}
+            {{ day.goal }}
+          {% endif %}
+        </td>
+      </tr>
       {% for session in day.sessions %}
         <tr>
           <td class="uk-width-2-5">

@@ -7,8 +7,9 @@ schedule:
       - starts: 12:00
         ends: 14:00
         title: Installation help for everybody
-  - title: "Day 1: Basic proceures. Download NorESM; set up experiment; run model; view output"
+  - title: "Day 1: Basic proceures."
     date: "2023-11-20"
+    goal: "Download NorESM; set up experiment; run model; view output"
     sessions:
       - starts: 9:00
         ends: 9:20

@@ -12,5 +12,3 @@
 - Download source code, basic experiment configuration, submit jobs
 - Modify model experiments: namelists, sourcemods, branch and hybrid runs
 - NorESM output and post-processing
-
-Detailed schedule will be announced soon!
