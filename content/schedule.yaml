@@ -13,10 +13,12 @@ schedule:
     goal: "Download NorESM; set up experiment; run model; view output"
     locations:
       - location: "Bergen"
-        room: "Geophysical Institute, U105"
+        room: "UiB, Geofysisk Institutt, U105"
       - location: "Oslo"
-        room: "Georg Sverdrups hus, Grupperom 7"
+        room: "UiO, Georg Sverdrups hus, Grupperom 7"
         url: "https://link.mazemap.com/dNXY8gtt"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
     sessions:
       - starts: 9:00
         ends: 9:20
@@ -56,7 +58,14 @@ schedule:
         title: Exercise-2 -- Examine model output with ncview
   - title: "Day 2: NorESM model structure. Model components; data components; coupler; build procedure"
     date: "2023-11-21"
-    #locations:
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Georg Sverdrups hus, Grupperom 1"
+        url: "https://link.mazemap.com/J0qsJ2A9"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
     sessions:
       - starts: 9:00
         ends: 9:30
