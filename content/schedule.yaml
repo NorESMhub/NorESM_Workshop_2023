@@ -11,8 +11,8 @@ schedule:
     date: "2023-11-20"
     sessions:
       - starts: 9:00
-        ends: 11:00
-        title: Introduction to NorESM - part 1/4
+        ends: 9:20
+        title: Introduction to NorESM
         presenters: TBA
       - starts: 12:00
         ends: 14:00
