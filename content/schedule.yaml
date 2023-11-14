@@ -13,54 +13,50 @@ schedule:
       - starts: 9:00
         ends: 9:20
         title: Introduction to NorESM
-        presenters: TBA
+#        presenters: TBA
       - starts: 9:20
         ends: 9:40
         title: Introducing NorESM github and documentation Pages
-        presenters: TBA
+#        presenters: TBA
       - starts: 9:40
         ends: 10:00
         title: Getting the NorESM code
-        presenters: TBA
+#        presenters: TBA
       - starts: 10:00
         ends: 10:15
         title: break
-        presenters: TBA
       - starts: 10:15
         ends: 11:00
         title: Set up first experiment
-        presenters: TBA
+#        presenters: TBA
       - starts: 11:00
         ends: 12:00
         title: lunch break
-        presenters: TBA
+#        presenters: TBA
       - starts: 12:00
         ends: 13:00
         title: Exercise-1 -- Setup, build and run NorESM
-        presenters: TBA
       - starts: 13:00
         ends: 13:15
         title: break
-        presenters: TBA
       - starts: 13:15
         ends: 13:40
         title: First look on model output
-        presenters: TBA
+#        presenters: TBA
       - starts: 13:40
         ends: 14:00
         title: Exercise-2 -- Examine model output with ncview
-        presenters: TBA
   - title: "Day 2"
     date: "2023-11-21"
     sessions:
       - starts: 9:00
         ends: 9:30
         title: Sigma2 HPC resources
-        presenters: TBA
+#        presenters: TBA
       - starts: 9:30
         ends: 10:00
         title: The NorESM model structure
-        presenters: TBA
+#        presenters: TBA
       - starts: 9:00
         ends: 11:00
         title: Introduction to NorESM - part 2/4
