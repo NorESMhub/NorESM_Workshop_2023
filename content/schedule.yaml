@@ -3,7 +3,12 @@
 schedule:
   - title: "Installation help and on-boarding(?)"
     date: "2023-11-17"
-    #locations:
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, BCCR room 4020"
+      #- location: "Oslo"
+      #  room: "UiO, Georg Sverdrups hus, Grupperom 1"
+      #  url: "https://link.mazemap.com/J0qsJ2A9"
     sessions:
       - starts: 12:00
         ends: 14:00
