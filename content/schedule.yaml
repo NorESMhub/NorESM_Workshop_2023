@@ -10,6 +10,12 @@ schedule:
   - title: "Day 1: Basic procedures."
     date: "2023-11-20"
     goal: "Download NorESM; set up experiment; run model; view output"
+    locations:
+      - location: Bergen
+        room: Geophysical Institute, U105
+      - location: Oslo
+        room: Georg Sverdrups hus, Grupperom 7
+        url: https://link.mazemap.com/dNXY8gtt
     sessions:
       - starts: 9:00
         ends: 9:20

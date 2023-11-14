@@ -34,17 +34,31 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td width="25%">
           {% if day.goal %}
             <b>Goal for the day:</b>
           {% endif %}
         </td>
-        <td>
+        <td width="75%">
           {% if day.goal %}
             {{ day.goal }}
           {% endif %}
         </td>
       </tr>
+      {% for loc in day.locations %}
+        <tr>
+          <td class="uk-width-2-5">
+            {{ loc.location }}
+          </td>
+          <td class="uk-width-3-5">
+            {% if loc.url %}
+              <a href="{{ loc.url }}" target="_blank">{{ loc.room }}</a>
+            {% else %}
+              {{ loc.room }}
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
       {% for session in day.sessions %}
         <tr>
           <td class="uk-width-2-5">
