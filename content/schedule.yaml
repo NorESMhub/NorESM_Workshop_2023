@@ -1,7 +1,7 @@
 ---
 # all times must be input in UTC, be careful about daylight saving
 schedule:
-  - title: "Installation help and on-boarding(?)"
+  - title: "Installation help and on-boarding"
     date: "2023-11-17"
     locations:
       - location: "Bergen"

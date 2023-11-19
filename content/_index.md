@@ -36,6 +36,9 @@ The workshop is sponsored by CHESS. If you join the workshop as a CHESS student,
 - Alok Gupta
 - Yanchun He
 - Tomas Torsvik
+- Matvey Debolskiy
+- Steve Goldhaber
+- Mariana Vertenstein
 
 ## Workshop organizers
 
