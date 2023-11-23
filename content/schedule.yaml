@@ -110,7 +110,14 @@ schedule:
         title: Exercise-4 -- Run pi-control and historical
   - title: "Day 3: NorESM model diagnostics."
     date: "2023-11-27"
-    #locations:
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Geologibygningen, Mellomrommet 102"
+        url: "https://link.mazemap.com/9mbRkBaK"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
     sessions:
       - starts: 9:00
         ends: 11:00
