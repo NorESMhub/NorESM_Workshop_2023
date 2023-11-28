@@ -121,12 +121,12 @@ schedule:
     sessions:
       - starts: 9:00
         ends: 11:00
-        title: Introduction to NorESM - part 3/4
-        presenters: TBA
+        title: NorESM diagnostics
+        presenters: Yanchun
       - starts: 12:00
         ends: 14:00
-        title: Introduction to NorESM - part 3/4 (cont.)
-        presenters: TBA
+        title: NorESM diagnostics
+        presenters: Yanchun
   - title: "Day 4: NorESM model development."
     date: "2023-11-28"
     locations:
@@ -140,12 +140,12 @@ schedule:
     sessions:
       - starts: 9:00
         ends: 11:00
-        title: Introduction to NorESM - part 4/4
-        presenters: TBA
+        title: Introduction to NorESM development
+        presenters: Mariana & Steve
       - starts: 12:00
         ends: 14:00
-        title: Introduction to NorESM - part 4/4 (cont.)
-        presenters: TBA
+        title: Introduction to NorESM development
+        presenters: Mariana & Steve
   # - title: "Day 1"
   #   date: "2023-11-20"
   #   sessions:
