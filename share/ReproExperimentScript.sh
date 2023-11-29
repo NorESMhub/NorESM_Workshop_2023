@@ -1,5 +1,5 @@
 #! /bin/bash
-## Run an out-of-the-box N2000 experiment for 13 months
+## Run an out-of-the-box N2000 experiment
 ##    but with reduced output.
 
 ## Experiment basics, modify these for your experiment
@@ -10,6 +10,8 @@ SRCROOT=${SRCROOT:-"/cluster/projects/nn1001k/xxUSERxx/NorESM"}
 CASEDIR=${CASEDIR:-"/cluster/work/users/xxUSERxx/cases"}
 REPO=${REPO:-"https://github.com/NorESMhub/NorESM"}
 PROJECT=${PROJECT:-"nn9039k"}
+STOP_OPTION=${STOP_OPTION:-"ndays"}
+STOP_N=${STOP_N:-"5"}
 
 perror() {
   ## Print an error message and exit if a non-zero error code is passed
@@ -73,9 +75,9 @@ fi
 # Testing a short run first with DEBUG=TRUE is valuable
 #    Comment out change for longer runs
 #./xmlchange DEBUG=TRUE
-#perror $? "trying ''"
-./xmlchange STOP_OPTION=nmonths,STOP_N=13
-perror $? "trying './xmlchange STOP_OPTION=nmonths,STOP_N=13'"
+#perror $? "trying './xmlchange DEBUG=TRUE'"
+./xmlchange STOP_OPTION=${STOP_OPTION},STOP_N=${STOP_N}
+perror $? "trying './xmlchange STOP_OPTION=${STOP_OPTION},STOP_N=${STOP_N}'"
 
 ## Build the model
 ./case.build
