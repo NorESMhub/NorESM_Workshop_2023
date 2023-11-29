@@ -14,3 +14,4 @@
   + [Reproducible experiment and model design](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Steve_Day4_Scripts_ModelDevelopment_SEdycore.pdf)
   + [Towards a new NorESM](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Mariana_noresm_nuopc_28112023.pdf)
 - Collaborative document for questions and notes:<br> https://hackmd.io/fFzNUsuITv6LwlAdL7QfXg
+- Example scripts for reproducible experiments:<br> https://github.com/NorESMhub/NorESM_Workshop_2023/tree/main/share
