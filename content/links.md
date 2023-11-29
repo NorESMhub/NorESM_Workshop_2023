@@ -11,5 +11,6 @@
   + [CMIP5/6 and NorESM datasets on NIRD](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/cmip-data.pdf)
 - Day 4:
   + [NorESM 2.1 architecture](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Mariana_tutorial_29112023.pdf)
+  + [Reproducible experiment and model design](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Steve_Day4_Scripts_ModelDevelopment_SEdycore.pdf)
   + [Towards a new NorESM](https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Mariana_noresm_nuopc_28112023.pdf)
 - Collaborative document for questions and notes:<br> https://hackmd.io/fFzNUsuITv6LwlAdL7QfXg
