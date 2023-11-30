@@ -50,6 +50,7 @@ logos = [
 #   { alt_text = "CodeRefinery logo", target_url = "https://coderefinery.org/", image = "coderefinery.png" },
 #   { alt_text = "CodeRefinery logo", target_url = "https://coderefinery.org/", image = "coderefinery.png" }
     { alt_text = "INES logo", target_url = "https://www.noresm.org/", image = "ines.png" }
+    { alt_text = "CHESS logo", target_url = "https://chess.w.uib.no/", image = "chess_logo_FINAL_colour_featured.png" }
 ]
 
 # adapt this
