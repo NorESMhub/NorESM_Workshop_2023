@@ -1,0 +1,205 @@
+---
+# all times must be input in UTC, be careful about daylight saving
+schedule:
+  - title: "Installation help and on-boarding"
+    date: "2023-11-17"
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, BCCR room 4020"
+      #- location: "Oslo"
+      #  room: "UiO, Georg Sverdrups hus, Grupperom 1"
+      #  url: "https://link.mazemap.com/J0qsJ2A9"
+    sessions:
+      - starts: 12:00
+        ends: 14:00
+        title: Installation help for everybody
+  - title: "Day 1: Basic procedures."
+    date: "2023-11-20"
+    goal: "Download NorESM; set up experiment; run model; view output"
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Georg Sverdrups hus, Grupperom 7"
+        url: "https://link.mazemap.com/dNXY8gtt"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
+    sessions:
+      - starts: 9:00
+        ends: 9:20
+        title: Introduction to NorESM
+#        presenters: TBA
+      - starts: 9:20
+        ends: 9:40
+        title: Introducing NorESM github and documentation Pages
+#        presenters: TBA
+      - starts: 9:40
+        ends: 10:00
+        title: Getting the NorESM code
+#        presenters: TBA
+      - starts: 10:00
+        ends: 10:15
+        title: break
+      - starts: 10:15
+        ends: 11:00
+        title: Set up first experiment
+#        presenters: TBA
+      - starts: 11:00
+        ends: 12:00
+        title: lunch break
+#        presenters: TBA
+      - starts: 12:00
+        ends: 13:00
+        title: Exercise-1 -- Setup, build and run NorESM
+      - starts: 13:00
+        ends: 13:15
+        title: break
+      - starts: 13:15
+        ends: 13:40
+        title: First look on model output
+#        presenters: TBA
+      - starts: 13:40
+        ends: 14:00
+        title: Exercise-2 -- Examine model output with ncview
+  - title: "Day 2: NorESM model structure."
+    date: "2023-11-21"
+    goal: "Model components; data components; coupler; build procedure"
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Georg Sverdrups hus, Grupperom 1"
+        url: "https://link.mazemap.com/J0qsJ2A9"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
+    sessions:
+      - starts: 9:00
+        ends: 9:30
+        title: Sigma2 HPC resources
+#        presenters: TBA
+      - starts: 9:30
+        ends: 10:00
+        title: The NorESM model structure
+#        presenters: TBA
+      - starts: 10:00
+        ends: 10:15
+        title: break
+      - starts: 10:15
+        ends: 10:45
+        title: Setting up a new NorESM case
+#        presenters: TBA
+      - starts: 10:45
+        ends: 11:00
+        title: Exercise-3 -- "checkout_externals" and "query_config" scripts
+      - starts: 11:00
+        ends: 12:00
+        title: lunch break
+      - starts: 12:00
+        ends: 12:45
+        title: Configure build and run settings for a case
+#        presenters: TBA
+      - starts: 12:45
+        ends: 13:00
+        title: NorESM log files
+#        presenters: TBA
+      - starts: 13:00
+        ends: 13:15
+        title: break
+      - starts: 13:15
+        ends: 14:00
+        title: Exercise-4 -- Run pi-control and historical
+  - title: "Day 3: NorESM model diagnostics."
+    date: "2023-11-27"
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Geologibygningen, Mellomrommet 102"
+        url: "https://link.mazemap.com/9mbRkBaK"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
+    sessions:
+      - starts: 9:00
+        ends: 11:00
+        title: NorESM diagnostics
+        presenters: Yanchun
+      - starts: 12:00
+        ends: 14:00
+        title: NorESM diagnostics
+        presenters: Yanchun
+  - title: "Day 4: NorESM model development."
+    date: "2023-11-28"
+    locations:
+      - location: "Bergen"
+        room: "UiB, Geofysisk Institutt, U105"
+      - location: "Oslo"
+        room: "UiO, Geologibygningen, Mellomrommet 102"
+        url: "https://link.mazemap.com/9mbRkBaK"
+      - location: "Tromsø"
+        room: "UiT, Institutt for Geovitenskap, rom 2.120, Nunataken"
+    sessions:
+      - starts: 9:00
+        ends: 11:00
+        title: Introduction to NorESM development
+        presenters: Mariana & Steve
+      - starts: 12:00
+        ends: 14:00
+        title: Introduction to NorESM development
+        presenters: Mariana & Steve
+  # - title: "Day 1"
+  #   date: "2023-11-20"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 8:20
+  #       title: Welcome and introduction
+  #       url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
+  #       presenters: TBA
+  #     - starts: 8:20
+  #       ends: 9:00
+  #       title: Introduction to version control - part 1/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Introduction to version control - part 2/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  # - title: "Day 2"
+  #   date: "2023-11-21"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Introduction to version control - part 3/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Introduction to version control - part 4/4
+  #       url: https://coderefinery.github.io/git-intro/
+  #       presenters: TBA
+  # - title: "Day 3"
+  #   date: "2023-11-27"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Collaborative distributed version control - part 1/2
+  #       url: https://coderefinery.github.io/git-collaborative/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Collaborative distributed version control - part 2/2
+  #       url: https://coderefinery.github.io/git-collaborative/
+  #       presenters: TBA
+  # - title: "Day 4"
+  #   date: "2023-11-28"
+  #   sessions:
+  #     - starts: 8:00
+  #       ends: 9:00
+  #       title: Reproducible research and FAIR data
+  #       url: https://coderefinery.github.io/reproducible-research/
+  #       presenters: TBA
+  #     - starts: 10:00
+  #       ends: 11:30
+  #       title: Social coding and open software
+  #       url: https://coderefinery.github.io/social-coding/
+  #       presenters: TBA

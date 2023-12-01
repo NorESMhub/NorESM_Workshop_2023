@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NorESM user workshop 2023</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;noresmhub.github.io&#x2F;NorESM_Workshop_2023&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.22/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://noresmhub.github.io/NorESM_Workshop_2023/atom.xml" />
+    
+
+        
+      <title>CodeRefinery</title>
+      <meta name="twitter:title" content="NorESM user workshop 2023" />
+      <meta property="og:title" content="NorESM user workshop 2023" />
+    
+
+    
+      <meta name="description" content="An introductory course on how to run, diagnose and contribute to NorESM." />
+      <meta name="twitter:description" content="An introductory course on how to run, diagnose and contribute to NorESM." />
+      <meta property="og:description" content="An introductory course on how to run, diagnose and contribute to NorESM." />
+    
+
+    
+
+
+    
+
+    <link href="https://noresmhub.github.io/NorESM_Workshop_2023/style.css" rel="stylesheet">
+
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <div class="uk-margin-bottom" uk-grid>
+    <div class="uk-width-expand@m">
+      <h1>NorESM user workshop 2023</h1>
+    </div>
+    <div class="uk-width-1-4@m">
+      <div class="uk-align-right">
+        
+  
+  <a href="https:&#x2F;&#x2F;www.noresm.org&#x2F;" target="_blank">
+    <img src="https:&#x2F;&#x2F;noresmhub.github.io&#x2F;NorESM_Workshop_2023&#x2F;processed_images&#x2F;ines.ec1e3e00023c3963.png" alt="INES logo"/>
+  </a>
+
+  
+  <a href="https:&#x2F;&#x2F;chess.w.uib.no&#x2F;" target="_blank">
+    <img src="https:&#x2F;&#x2F;noresmhub.github.io&#x2F;NorESM_Workshop_2023&#x2F;processed_images&#x2F;chess_logo_FINAL_colour_featured.bb8b6ef1dcbef507.png" alt="CHESS logo"/>
+  </a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light uk-margin-large-bottom">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        
+<h3 id="summary-of-important-links">Summary of important links</h3>
+<ul>
+<li>Links to lesson material in the schedule below (shareable)
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Bentsen_Torsvik_NorESM_user_workshop_20231120.pdf">NorESM historical development</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/NorESM_user_workshop_2023.pdf">NorESM workflow and model structure</a></li>
+</ul>
+</li>
+<li>Day 3:
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/noresm-diag-basics.pdf">Basics on NorESM model output</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/cmip-data.pdf">CMIP5/6 and NorESM datasets on NIRD</a></li>
+</ul>
+</li>
+<li>Day 4:
+<ul>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Mariana_tutorial_29112023.pdf">NorESM 2.1 architecture</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Steve_Day4_Scripts_ModelDevelopment_SEdycore.pdf">Reproducible experiment and model design</a></li>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/blob/main/presentations/Mariana_noresm_nuopc_28112023.pdf">Towards a new NorESM</a></li>
+</ul>
+</li>
+<li><a rel="noopener" target="_blank" href="https://github.com/NorESMhub/NorESM_Workshop_2023/tree/main/share">Example scripts for reproducible experiments</a></li>
+<li>Collaborative document for questions and notes:<br> https://hackmd.io/fFzNUsuITv6LwlAdL7QfXg</li>
+</ul>
+
+
+      </div>
+      <div class="uk-width-expand@m">
+        
+<h3 id="news">News</h3>
+<ul>
+<li>Here we will post latest news before/during the workshop</li>
+</ul>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div uk-grid>
+    <div class="uk-width-1-2@m">
+      <h2>Registration</h2>
+
+
+
+
+  <button class="uk-button uk-button-danger uk-button-large">
+    Registration is closed
+  </button>
+
+
+
+
+
+<p><strong>Deadline for registration:</strong> Friday 27 October 2023</p>
+<h2 id="content-of-workshop">Content of workshop:</h2>
+<ul>
+<li>Introduction to the NorESM model system</li>
+<li>NorESM e-resources: source code, github, documentation</li>
+<li>Download source code, basic experiment configuration, submit jobs</li>
+<li>Modify model experiments: namelists, sourcemods, branch and hybrid runs</li>
+<li>NorESM output and post-processing</li>
+</ul>
+
+
+      <script>
+  dayjs.extend(window.dayjs_plugin_utc)
+</script>
+
+<h2>Schedule</h2>
+
+<div class="uk-alert-danger" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    All times are displayed in the local timezone of your browser.
+    Detected timezone offset compared to UTC: 
+  <script>
+    var date = '2023-03-20';
+    var time = '09:00';
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('Z'));
+  </script>
+
+  </p>
+</div>
+
+<!-- <div class="uk-alert-info" uk-alert> -->
+<!--   <a class="uk-alert-close" uk-close></a> -->
+<!--   <p> -->
+<!--     <b>Breaks</b>: 10 minutes every hour, between xx:50 and xx:10, but it is -->
+<!--     difficult for us to indicate exactly when. -->
+<!--   </p> -->
+<!-- </div> -->
+
+<table class="uk-table uk-table-small uk-table-justify">
+  <tbody>
+    
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Installation help and on-boarding</b>
+        </td>
+      </tr>
+      
+      
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Bergen:</b> UiB, Geofysisk Institutt, BCCR room 4020
+              
+            </td>
+          </tr>
+        
+      
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-17';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-17';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-17';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Installation help for everybody
+            
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 1: Basic procedures.</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td colspan="2">
+            <b>Goal for the day:</b> Download NorESM; set up experiment; run model; view output
+          </td>
+        </tr>
+      
+      
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Bergen:</b> UiB, Geofysisk Institutt, U105
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Oslo:</b> <a href="https:&#x2F;&#x2F;link.mazemap.com&#x2F;dNXY8gtt" target="_blank">UiO, Georg Sverdrups hus, Grupperom 7</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Tromsø:</b> UiT, Institutt for Geovitenskap, rom 2.120, Nunataken
+              
+            </td>
+          </tr>
+        
+      
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:20';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:20';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Introduction to NorESM
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:20';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Introducing NorESM github and documentation Pages
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '9:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Getting the NorESM code
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Set up first experiment
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              lunch break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Exercise-1 -- Setup, build and run NorESM
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              First look on model output
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '13:40';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-20';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Exercise-2 -- Examine model output with ncview
+            
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 2: NorESM model structure.</b>
+        </td>
+      </tr>
+      
+        <tr>
+          <td colspan="2">
+            <b>Goal for the day:</b> Model components; data components; coupler; build procedure
+          </td>
+        </tr>
+      
+      
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Bergen:</b> UiB, Geofysisk Institutt, U105
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Oslo:</b> <a href="https:&#x2F;&#x2F;link.mazemap.com&#x2F;J0qsJ2A9" target="_blank">UiO, Georg Sverdrups hus, Grupperom 1</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Tromsø:</b> UiT, Institutt for Geovitenskap, rom 2.120, Nunataken
+              
+            </td>
+          </tr>
+        
+      
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '9:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '9:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '9:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Sigma2 HPC resources
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '9:30';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              The NorESM model structure
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Setting up a new NorESM case
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '10:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Exercise-3 -- &quot;checkout_externals&quot; and &quot;query_config&quot; scripts
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              lunch break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Configure build and run settings for a case
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '12:45';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              NorESM log files
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              break
+            
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '13:15';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-21';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Exercise-4 -- Run pi-control and historical
+            
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 3: NorESM model diagnostics.</b>
+        </td>
+      </tr>
+      
+      
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Bergen:</b> UiB, Geofysisk Institutt, U105
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Oslo:</b> <a href="https:&#x2F;&#x2F;link.mazemap.com&#x2F;9mbRkBaK" target="_blank">UiO, Geologibygningen, Mellomrommet 102</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Tromsø:</b> UiT, Institutt for Geovitenskap, rom 2.120, Nunataken
+              
+            </td>
+          </tr>
+        
+      
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '9:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              NorESM diagnostics
+            
+            
+              (Yanchun)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-27';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              NorESM diagnostics
+            
+            
+              (Yanchun)
+            
+          </td>
+        </tr>
+      
+    
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>Day 4: NorESM model development.</b>
+        </td>
+      </tr>
+      
+      
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Bergen:</b> UiB, Geofysisk Institutt, U105
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Oslo:</b> <a href="https:&#x2F;&#x2F;link.mazemap.com&#x2F;9mbRkBaK" target="_blank">UiO, Geologibygningen, Mellomrommet 102</a>
+              
+            </td>
+          </tr>
+        
+          <tr>
+            <td colspan="2">
+              
+                <b>Tromsø:</b> UiT, Institutt for Geovitenskap, rom 2.120, Nunataken
+              
+            </td>
+          </tr>
+        
+      
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '9:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '11:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Introduction to NorESM development
+            
+            
+              (Mariana &amp; Steve)
+            
+          </td>
+        </tr>
+      
+        <tr>
+          <td class="uk-width-2-5">
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+,
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '12:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+            -
+            
+  <script>
+    var date = '2023-11-28';
+    var time = '14:00';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+
+          </td>
+          <td class="uk-width-3-5">
+            
+              Introduction to NorESM development
+            
+            
+              (Mariana &amp; Steve)
+            
+          </td>
+        </tr>
+      
+    
+  </tbody>
+</table>
+
+    </div>
+    <div class="uk-width-1-2@m">
+      <h2 id="course-goals">Course goals</h2>
+<p>The goal of the coars is that the participants should be able to set up and
+run NorESM experiments, run standard diagnostics on the model output, and 
+learn how to contribute to the NorESM model system and supporting infrastructure.</p>
+<h2 id="audience">Audience</h2>
+<p>The workshop is intended for Ph.D students, postdocs and scientists who are interested in executing model simulations and learning more about technical aspects around it.</p>
+<p>The workshop is sponsored by CHESS. If you join the workshop as a CHESS student, please indicate this in the registration form.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>You should bring your own laptop with an installed SSH client, to enable
+login to Sigma2 resources.</li>
+<li>You will need an account on the Sigma2 HPC Betzy and storage server Nird to
+work with NorESM. If you do not already have access to these systems, we
+can arrange access before the meeting.</li>
+<li>You should be able to navigate the file tree in a terminal session and edit
+text files in the terminal.
+<a rel="noopener" target="_blank" href="https://scicomp.aalto.fi/scicomp/shell/">This Linux shell crash course</a>
+(<a rel="noopener" target="_blank" href="https://youtu.be/56p6xX0aToI">video</a>)
+contains the essentials.</li>
+</ul>
+<h2 id="instructors">Instructors</h2>
+<ul>
+<li>Ada Gjermundsen</li>
+<li>Alok Gupta</li>
+<li>Yanchun He</li>
+<li>Tomas Torsvik</li>
+<li>Matvey Debolskiy</li>
+<li>Steve Goldhaber</li>
+<li>Mariana Vertenstein</li>
+</ul>
+<h2 id="workshop-organizers">Workshop organizers</h2>
+<ul>
+<li>INES2 Interim</li>
+<li>CHESS - Research school on changing climates in the coupled earth system</li>
+</ul>
+
+    </div>
+  </div>
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <!-- <div> -->
+  <!--   <h4>Funding</h4> -->
+  <!--   <p> -->
+  <!--     CodeRefinery is a project within the -->
+  <!--     <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC). -->
+  <!--     NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>. -->
+  <!--   </p> -->
+  <!-- </div> -->
+
+  <!-- <div> -->
+  <!--   <h4>Privacy</h4> -->
+  <!--   <p> -->
+  <!--     <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a> -->
+  <!--   </p> -->
+  <!-- </div> -->
+
+  <!-- <div> -->
+  <!--   <h4>Follow us</h4> -->
+  <!--   <ul class="uk-iconnav"> -->
+  <!--     <li> -->
+  <!--       <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a> -->
+  <!--     </li> -->
+  <!--     <li> -->
+  <!--       <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a> -->
+  <!--     </li> -->
+  <!--     <li> -->
+  <!--       <a href="https://twitter.com/coderefine" target="_blank" uk-icon="icon: twitter">Twitter</a> -->
+  <!--     </li> -->
+  <!--     <li> -->
+  <!--       <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a> -->
+  <!--     </li> -->
+  <!--   </ul> -->
+  <!-- </div> -->
+
+  <!-- <div> -->
+  <!--   <h4>Contact</h4> -->
+  <!--   <p> -->
+  <!--     <a href="mailto:support@coderefinery.org">support@coderefinery.org</a> -->
+  <!--   </p> -->
+  <!-- </div> -->
+
+  <!-- <div> -->
+  <!--   <h4>Improve this page</h4> -->
+  <!--   <p> -->
+  <!--     <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;template-workshop-webpage">Source code</a> -->
+  <!--   </p> -->
+  <!-- </div> -->
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

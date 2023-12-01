@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://noresmhub.github.io/NorESM_Workshop_2023/sitemap.xml
